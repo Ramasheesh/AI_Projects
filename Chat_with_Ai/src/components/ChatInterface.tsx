@@ -78,10 +78,10 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ language }) => {
   };
 
   return (
-    <div className="flex flex-col h-full max-w-4xl mx-auto">
-      <div className="flex-1 flex gap-4 overflow-hidden">
-        <div className="flex-1 flex flex-col overflow-hidden bg-white rounded-lg shadow-md">
-          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+    <div className="flex flex-col h-full max-w-4xl mx-auto rounded-lg shadow-lg">
+      <div className="flex-1 flex gap-4 bg-[#001219] rounded-lg overflow-hidden">
+        <div className="flex-1 flex flex-col overflow-hidden rounded-lg shadow-md">
+          <div className="flex-1 overflow-y-auto  p-4 space-y-4">
             {messages.length === 0 ? (
               <div className="h-full flex items-center justify-center text-gray-400">
                 {language === 'hindi' 

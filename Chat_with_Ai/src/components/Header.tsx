@@ -10,7 +10,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ language, mode, onToggleLanguage, onToggleMode }) => {
   return (
-    <header className="bg-indigo-600 text-white p-4 shadow-md">
+    <header className="bg-gradient-to-r from-indigo-900 via-blue-400 to-pink-400 text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-2">
           {mode === 'chat' ? (

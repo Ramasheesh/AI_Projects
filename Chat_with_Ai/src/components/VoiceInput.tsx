@@ -66,7 +66,7 @@ const VoiceInput: React.FC<VoiceInputProps> = ({ language, onTranscript, onClose
   }
 
   return (
-    <div className="p-4 border rounded-lg bg-white">
+    <div className="p-4 border rounded-lg text-white bg-gradient-to-r from-[#390099] via-red-500 to-green-500 ...">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-medium">
           {language === 'hindi' ? 'बोलकर बताएं' : 'Voice Input'}
@@ -97,7 +97,7 @@ const VoiceInput: React.FC<VoiceInputProps> = ({ language, onTranscript, onClose
             <Mic className="h-8 w-8" />
           )}
         </button>
-        <p className="mt-4 text-sm text-gray-600">
+        <p className="mt-4 text-sm text-white">
           {isProcessing
             ? language === 'hindi'
               ? 'आवाज़ को प्रोसेस किया जा रहा है...'

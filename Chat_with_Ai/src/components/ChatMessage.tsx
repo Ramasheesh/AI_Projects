@@ -20,7 +20,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, language }) => {
   return (
     <div className={`flex items-start space-x-2 ${isAi ? '' : 'justify-end'}`}>
       {isAi && (
-        <div className="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-white flex-shrink-0">
+        <div className="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-gray-100 flex-shrink-0">
           AI
         </div>
       )}
@@ -36,7 +36,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, language }) => {
       </div>
       
       {!isAi && (
-        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-gray-700 flex-shrink-0">
+        <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 flex-shrink-0">
           {language === 'hindi' ? 'आप' : 'You'}
         </div>
       )}
